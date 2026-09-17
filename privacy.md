@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # 개인정보 처리방침
 
-시행일: 2026년 9월 16일
+시행일: 2026년 9월 17일
 
 **요약 — Kaldrin 개발자는 사용자의 정보를 수집하거나 보관하지 않습니다.**
 
@@ -22,15 +22,16 @@ Kaldrin 이 인터넷으로 직접 보내지는 않습니다.
 
 | 넘기는 정보 | 언제 |
 |---|---|
-| Discord 앱 ID (Kaldrin 앱, 또는 사용자가 설정에 넣은 앱) | 연결할 때 |
+| Discord 앱 ID (Kaldrin 앱, 또는 「Kaldrin 앱 ID 사용」을 끄고 사용자가 넣은 앱) | 연결할 때 |
 | 지금 있는 곳 — 월드·서버 이름, 또는 「싱글플레이」·「멀티플레이」·「메인 메뉴」 | 켜져 있는 동안 |
-| 서버 주소 — **외부 서버일 때만** (로컬 월드의 주소는 보내지 않습니다) | 「주소 표시」가 켜져 있을 때 |
+| 서버 주소 — **외부 서버일 때만** (로컬 월드의 주소는 보내지 않습니다). 포트는 「포트 표시」에 따라 붙습니다 — 기본은 기본 포트(19132)가 아닐 때만 | 「주소 표시」가 켜져 있을 때 |
 | 게임 모드 (서바이벌·크리에이티브 등) | 「게임 모드 표시」가 켜져 있을 때 |
 | 지금 월드에 들어온 시각 (경과 시간 표시용) | 「경과 시간 표시」가 켜져 있을 때 |
 | 큰 그림 이름 | 설정에 적었을 때 |
 | 게임의 프로세스 번호(PID) | 켜져 있는 동안 — Discord 가 게임이 꺼질 때 상태를 지우는 데 씁니다 |
 
 - 월드 이름·주소·게임 모드·경과 시간은 모듈 설정에서 **하나씩 끌 수 있습니다.** 끄면 그 자리에는 일반 문구만 갑니다.
+  주소의 포트는 「포트 표시」를 「안 함」으로 두면 따로 뺄 수 있습니다.
 - 모듈을 끄거나 Kaldrin 을 종료하면 상태를 지웁니다.
 - Discord 앱은 이 정보를 Discord 로 보내고, 누가 볼 수 있는지는 사용자의 Discord 활동 상태 공개 설정이 정합니다.
   이 처리에는 [Discord 개인정보 처리방침](https://discord.com/privacy)이 적용됩니다.
@@ -71,7 +72,7 @@ Discord 기능은 Discord 를 이용할 수 있는 나이의 사용자를 전제
 
 # Privacy Policy
 
-Effective date: September 16, 2026
+Effective date: September 17, 2026
 
 **In short — the Kaldrin developer does not collect or store any of your information.**
 
@@ -88,15 +89,16 @@ Kaldrin itself does not send it over the internet.
 
 | Information passed | When |
 |---|---|
-| Discord application ID (the Kaldrin app, or one you entered in the settings) | When connecting |
+| Discord application ID (the Kaldrin app, or your own app entered after turning off "Use Kaldrin App ID") | When connecting |
 | Where you are — world or server name, or "Singleplayer", "Multiplayer", "Main menu" | While on |
-| Server address — **external servers only** (local world addresses are never sent) | When "Show address" is on |
+| Server address — **external servers only** (local world addresses are never sent). The port is added according to "Show port" — by default only when it is not the default port (19132) | When "Show address" is on |
 | Game mode (Survival, Creative, …) | When "Show game mode" is on |
 | The time you entered the current world (for elapsed time) | When "Show elapsed time" is on |
 | Large image key | When you set one |
 | The game's process ID (PID) | While on — Discord uses it to clear the status when the game closes |
 
 - World name, address, game mode and elapsed time can each be **turned off** in the module settings. When off, only a generic phrase is sent in its place.
+  The address's port can be left out on its own by setting "Show port" to "Never".
 - Turning the module off, or closing Kaldrin, clears the status.
 - The Discord app sends this information to Discord, and your Discord activity privacy settings decide who can see it.
   [Discord's Privacy Policy](https://discord.com/privacy) applies to that processing.

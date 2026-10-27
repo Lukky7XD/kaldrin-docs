@@ -23,21 +23,20 @@ Kaldrin 이 인터넷으로 직접 보내지는 않습니다.
 | 넘기는 정보 | 언제 |
 |---|---|
 | Discord 앱 ID (Kaldrin 앱, 또는 「Kaldrin 앱 ID 사용」을 끄고 사용자가 넣은 앱) | 연결할 때 |
-| 지금 있는 곳 — 월드·서버 이름(로컬 월드는 「싱글플레이 — 월드 이름」, 친구 월드는 「친구 월드 — 월드 이름」), 또는 「싱글플레이」·「친구 월드」·「멀티플레이」·「메인 메뉴」·「불러오는 중」 | 켜져 있는 동안 |
-| 서버 주소 — **외부 서버일 때만** (로컬 월드의 주소는 보내지 않습니다). 포트는 「포트 표시」에 따라 붙습니다 — 기본은 기본 포트(19132)가 아닐 때만 | 「주소 표시」가 켜져 있을 때 |
-| 게임 모드 (서바이벌·크리에이티브 등) | 「게임 모드 표시」가 켜져 있을 때 |
-| 서버 인원 — 플레이어 목록의 사람 수, **외부 서버·친구 월드일 때만** | 「인원 표시」가 켜져 있을 때 |
+| 지금 있는 곳의 문구 — 메인 메뉴·월드를 불러오는 중·싱글 월드·서버·친구 월드마다 하나(기본은 「In the main menu」 같은 영어 문구이며, 사용자가 모듈 설정에서 바꿀 수 있습니다) | 켜져 있는 동안 |
+| 월드·서버 이름 — 상태의 둘째 줄, 그리고 사용자가 형식에 `{v1}` 을 넣은 자리 | 「월드 이름 표시」가 켜져 있을 때 |
+| 게임 모드 (서바이벌·크리에이티브 등) — 상태의 둘째 줄, 그리고 사용자가 형식에 `{v2}` 를 넣은 자리 | 「게임 모드 표시」가 켜져 있을 때 |
+| 사용자가 직접 적은 커스텀 메시지 — 상태의 둘째 줄 | 「커스텀 메시지」가 켜져 있을 때 |
 | 지금 월드에 들어온 시각 (경과 시간 표시용) | 「경과 시간 표시」가 켜져 있을 때 |
-| 그림 이름 — 큰 그림(기본은 Kaldrin 로고 `kaldrin`)과 작은 그림(기본은 마인크래프트 아이콘 `minecraft`), 그림 위의 고정 글(「Kaldrin Client」·「Minecraft Bedrock」) | 그림 이름 칸이 비어 있지 않을 때 |
+| 그림 이름 — 큰 그림 `kaldrin`(Kaldrin 로고)과 작은 그림 `minecraft`(마인크래프트 아이콘), 그림 위의 고정 글(「Kaldrin Client」·「Minecraft Bedrock」) | 켜져 있는 동안 |
 | 게임의 프로세스 번호(PID) | 켜져 있는 동안 — Discord 가 게임이 꺼질 때 상태를 지우는 데 씁니다 |
 
-- 월드 이름·주소·게임 모드·서버 인원·경과 시간은 모듈 설정에서 **하나씩 끌 수 있습니다.** 끄면 그 자리에는 일반 문구만 가거나 아무것도 가지 않습니다.
-  주소의 포트는 「포트 표시」를 「안 함」으로 두면 따로 뺄 수 있습니다.
+- 월드 이름·게임 모드·경과 시간은 모듈 설정에서 **하나씩 끌 수 있습니다.** 끄면 그 정보는 어디에도 가지 않습니다 — 둘째 줄에서도, 형식의 자리에서도 빕니다.
+- 서버 주소·포트와 서버 인원은 넘기지 않습니다.
 - 모듈을 끄거나 Kaldrin 을 종료하면 상태를 지웁니다.
 - Discord 앱은 이 정보를 Discord 로 보내고, 누가 볼 수 있는지는 사용자의 Discord 활동 상태 공개 설정이 정합니다.
   이 처리에는 [Discord 개인정보 처리방침](https://discord.com/privacy)이 적용됩니다.
-- **「주소 표시」를 켜면 상태를 볼 수 있는 사람이 서버 주소를 볼 수 있습니다.** 비공개 서버에서는 꺼 두세요.
-  월드 이름에 실명이나 게이머태그가 들어 있으면 그것도 그대로 보입니다.
+- 월드 이름이나 사용자가 적은 문구·커스텀 메시지에 실명이나 게이머태그가 들어 있으면 그것도 그대로 보입니다.
 
 ## 3. PC 에 저장되는 것
 
@@ -91,21 +90,20 @@ Kaldrin itself does not send it over the internet.
 | Information passed | When |
 |---|---|
 | Discord application ID (the Kaldrin app, or your own app entered after turning off "Use Kaldrin App ID") | When connecting |
-| Where you are — world or server name (a local world as "Singleplayer — world name", a friend's world as "Friend's world — world name"), or "Singleplayer", "Friend's world", "Multiplayer", "Main menu", "Loading" | While on |
-| Server address — **external servers only** (local world addresses are never sent). The port is added according to "Show port" — by default only when it is not the default port (19132) | When "Show address" is on |
-| Game mode (Survival, Creative, …) | When "Show game mode" is on |
-| Server player count — the number of people on the player list, **external servers and friends' worlds only** | When "Show player count" is on |
+| A message for where you are — one each for the main menu, loading a world, a singleplayer world, a server and a friend's world (by default English phrases such as "In the main menu", which you can change in the module settings) | While on |
+| World or server name — on the second line of the status, and wherever you put `{v1}` in a format | When "Show world name" is on |
+| Game mode (Survival, Creative, …) — on the second line of the status, and wherever you put `{v2}` in a format | When "Show game mode" is on |
+| A custom message you write yourself — on the second line of the status | When "Custom message" is on |
 | The time you entered the current world (for elapsed time) | When "Show elapsed time" is on |
-| Image keys — the large image (by default the Kaldrin logo, `kaldrin`) and the small image (by default the Minecraft icon, `minecraft`), and the fixed text on them ("Kaldrin Client", "Minecraft Bedrock") | When an image key is not empty |
+| Image keys — the large image `kaldrin` (the Kaldrin logo) and the small image `minecraft` (the Minecraft icon), and the fixed text on them ("Kaldrin Client", "Minecraft Bedrock") | While on |
 | The game's process ID (PID) | While on — Discord uses it to clear the status when the game closes |
 
-- World name, address, game mode, server player count and elapsed time can each be **turned off** in the module settings. When off, only a generic phrase or nothing is sent in its place.
-  The address's port can be left out on its own by setting "Show port" to "Never".
+- World name, game mode and elapsed time can each be **turned off** in the module settings. When off, that information is not sent anywhere — it is left out of the second line and out of format slots.
+- The server address, port and player count are not passed.
 - Turning the module off, or closing Kaldrin, clears the status.
 - The Discord app sends this information to Discord, and your Discord activity privacy settings decide who can see it.
   [Discord's Privacy Policy](https://discord.com/privacy) applies to that processing.
-- **If "Show address" is on, anyone who can see your status can see the server address.** Turn it off on private servers.
-  If a world name contains your real name or gamertag, that is shown as well.
+- If a world name, or a message or custom message you write, contains your real name or gamertag, that is shown as well.
 
 ## 3. What is stored on your PC
 

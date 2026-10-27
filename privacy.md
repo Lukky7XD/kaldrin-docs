@@ -23,7 +23,7 @@ Kaldrin 이 인터넷으로 직접 보내지는 않습니다.
 | 넘기는 정보 | 언제 |
 |---|---|
 | Discord 앱 ID (Kaldrin 앱, 또는 「Kaldrin 앱 ID 사용」을 끄고 사용자가 넣은 앱) | 연결할 때 |
-| 지금 있는 곳의 문구 — 메인 메뉴·월드를 불러오는 중·싱글 월드·서버·친구 월드마다 하나(기본은 「In the main menu」 같은 영어 문구이며, 사용자가 모듈 설정에서 바꿀 수 있습니다) | 켜져 있는 동안 |
+| 지금 있는 곳의 문구 — 메인 메뉴·월드를 불러오는 중·싱글 월드·서버·렐름·친구 월드마다 하나(기본은 「In the main menu」 같은 영어 문구이며, 사용자가 모듈 설정에서 바꿀 수 있습니다) | 켜져 있는 동안 |
 | 월드·서버 이름 — 상태의 둘째 줄, 그리고 사용자가 문구에 `{v1}` 을 넣은 자리 | 「월드 이름 표시」가 켜져 있을 때 |
 | 게임 모드 (서바이벌·크리에이티브 등) — 상태의 둘째 줄, 그리고 사용자가 문구에 `{v2}` 를 넣은 자리 | 「게임 모드 표시」가 켜져 있을 때 |
 | 사용자가 직접 적은 둘째 줄 문구 — 상태의 둘째 줄 | 「둘째 줄 바꾸기」가 켜져 있을 때 |
@@ -90,7 +90,7 @@ Kaldrin itself does not send it over the internet.
 | Information passed | When |
 |---|---|
 | Discord application ID (the Kaldrin app, or your own app entered after turning off "Use Kaldrin App ID") | When connecting |
-| A message for where you are — one each for the main menu, loading a world, a singleplayer world, a server and a friend's world (by default English phrases such as "In the main menu", which you can change in the module settings) | While on |
+| A message for where you are — one each for the main menu, loading a world, a singleplayer world, a server, a Realm and a friend's world (by default English phrases such as "In the main menu", which you can change in the module settings) | While on |
 | World or server name — on the second line of the status, and wherever you put `{v1}` in a message | When "Show world name" is on |
 | Game mode (Survival, Creative, …) — on the second line of the status, and wherever you put `{v2}` in a message | When "Show game mode" is on |
 | A second line message you write yourself — on the second line of the status | When "Custom second line" is on |

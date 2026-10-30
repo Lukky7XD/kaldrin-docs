@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # 개인정보 처리방침
 
-시행일: 2026년 10월 27일
+시행일: 2026년 10월 31일
 
 **요약 — Kaldrin 개발자는 사용자의 정보를 수집하거나 보관하지 않습니다.**
 
@@ -24,14 +24,15 @@ Kaldrin 이 인터넷으로 직접 보내지는 않습니다.
 |---|---|
 | Discord 앱 ID (Kaldrin 앱, 또는 「Kaldrin 앱 ID 사용」을 끄고 사용자가 넣은 앱) | 연결할 때 |
 | 지금 있는 곳의 문구 — 메인 메뉴·월드를 불러오는 중·싱글 월드·서버·렐름·친구 월드마다 하나(기본은 「In the main menu」 같은 영어 문구이며, 사용자가 모듈 설정에서 바꿀 수 있습니다) | 켜져 있는 동안 |
-| 월드·서버 이름 — 상태의 둘째 줄, 그리고 사용자가 문구에 `{v1}` 을 넣은 자리 | 「월드 이름 표시」가 켜져 있을 때 |
-| 게임 모드 (서바이벌·크리에이티브 등) — 상태의 둘째 줄, 그리고 사용자가 문구에 `{v2}` 를 넣은 자리 | 「게임 모드 표시」가 켜져 있을 때 |
-| 사용자가 직접 적은 둘째 줄 문구 — 상태의 둘째 줄 | 「둘째 줄 바꾸기」가 켜져 있을 때 |
+| 월드·서버 이름 — 사용자가 문구에 `{v}` · `{v1}` 을 넣은 자리(「둘째 줄」 문구의 기본이 `{v}` 라 기본으로는 상태의 둘째 줄에 들어갑니다) | 문구에 그 자리가 있을 때 |
+| 게임 모드 (서바이벌·크리에이티브 등) — 사용자가 문구에 `{v}` · `{v2}` 를 넣은 자리(기본으로는 상태의 둘째 줄) | 문구에 그 자리가 있을 때 |
+| 「둘째 줄」 문구 — 상태의 둘째 줄(사용자가 바꿀 수 있고, 비우면 둘째 줄을 보내지 않습니다) | 켜져 있는 동안 |
 | 지금 월드에 들어온 시각 (경과 시간 표시용) | 「경과 시간 표시」가 켜져 있을 때 |
 | 그림 이름 — 큰 그림 `kaldrin`(Kaldrin 로고)과 작은 그림 `minecraft`(마인크래프트 아이콘), 그림 위의 고정 글(「Kaldrin Client」·「Minecraft Bedrock」) | 켜져 있는 동안 |
 | 게임의 프로세스 번호(PID) | 켜져 있는 동안 — Discord 가 게임이 꺼질 때 상태를 지우는 데 씁니다 |
 
-- 월드 이름·게임 모드·경과 시간은 모듈 설정에서 **하나씩 끌 수 있습니다.** 끄면 그 정보는 어디에도 가지 않습니다 — 둘째 줄에서도, 문구의 자리에서도 빕니다.
+- 월드 이름·게임 모드는 **문구에서 그 자리(`{v}` · `{v1}` · `{v2}`)를 빼면** 어디에도 가지 않습니다 — 「둘째 줄」 문구를 비우면 둘째 줄을 보내지 않습니다.
+  경과 시간은 「경과 시간 표시」로 끕니다.
 - 서버 주소·포트와 서버 인원은 넘기지 않습니다.
 - 모듈을 끄거나 Kaldrin 을 종료하면 상태를 지웁니다.
 - Discord 앱은 이 정보를 Discord 로 보내고, 누가 볼 수 있는지는 사용자의 Discord 활동 상태 공개 설정이 정합니다.
@@ -72,7 +73,7 @@ Discord 기능은 Discord 를 이용할 수 있는 나이의 사용자를 전제
 
 # Privacy Policy
 
-Effective date: October 27, 2026
+Effective date: October 31, 2026
 
 **In short — the Kaldrin developer does not collect or store any of your information.**
 
@@ -91,14 +92,15 @@ Kaldrin itself does not send it over the internet.
 |---|---|
 | Discord application ID (the Kaldrin app, or your own app entered after turning off "Use Kaldrin App ID") | When connecting |
 | A message for where you are — one each for the main menu, loading a world, a singleplayer world, a server, a Realm and a friend's world (by default English phrases such as "In the main menu", which you can change in the module settings) | While on |
-| World or server name — on the second line of the status, and wherever you put `{v1}` in a message | When "Show world name" is on |
-| Game mode (Survival, Creative, …) — on the second line of the status, and wherever you put `{v2}` in a message | When "Show game mode" is on |
-| A second line message you write yourself — on the second line of the status | When "Custom second line" is on |
+| World or server name — wherever you put `{v}` or `{v1}` in a message (the "Second line" message is `{v}` by default, so by default it is on the second line of the status) | When a message has that slot |
+| Game mode (Survival, Creative, …) — wherever you put `{v}` or `{v2}` in a message (by default on the second line of the status) | When a message has that slot |
+| The "Second line" message — on the second line of the status (you can change it; leave it empty to send no second line) | While on |
 | The time you entered the current world (for elapsed time) | When "Show elapsed time" is on |
 | Image keys — the large image `kaldrin` (the Kaldrin logo) and the small image `minecraft` (the Minecraft icon), and the fixed text on them ("Kaldrin Client", "Minecraft Bedrock") | While on |
 | The game's process ID (PID) | While on — Discord uses it to clear the status when the game closes |
 
-- World name, game mode and elapsed time can each be **turned off** in the module settings. When off, that information is not sent anywhere — it is left out of the second line and out of message slots.
+- World name and game mode are not sent anywhere **once you remove their slots (`{v}`, `{v1}`, `{v2}`) from the messages** — leave the "Second line" message
+  empty to send no second line. Elapsed time is turned off with "Show elapsed time".
 - The server address, port and player count are not passed.
 - Turning the module off, or closing Kaldrin, clears the status.
 - The Discord app sends this information to Discord, and your Discord activity privacy settings decide who can see it.
